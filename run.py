@@ -10,12 +10,12 @@ async def on_ready():
 
 @client.command(pass_context=True)
 async def Song(ctx):
-    await ctx.send('Hello there!')
+    await ctx.send('Hello there')
 
 @client.event
 async def on_message(message):
     if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+        await message.channel.send('Hello')
     await client.process_commands(message)
 client.run(TOKEN)
 
